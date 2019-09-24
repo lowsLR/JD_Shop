@@ -1,0 +1,11 @@
+<view class="bg_layout">
+  <image class="logo" src="http://p1.ssl.cdn.btime.com/t01840e0e6a8822e9f4.jpg" style="width:388rpx;height:292rpx;"></image>
+  <navigator class="search" url="/pages/search/search">
+    <view>
+      <image src="/image/search_select.png" style="width:40rpx;height:42rpx;"></image>
+      搜索商品
+    </view>
+  </navigator>
+</view>
+<!-- 优惠卷  -->
+<preferential />

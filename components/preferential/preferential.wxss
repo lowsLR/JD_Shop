@@ -1,0 +1,64 @@
+/* components/preferential/preferential.wxss */
+
+.title {
+  padding: 20rpx;
+  color: #999;
+  font-size: 26rpx;
+}
+
+.items {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.item {
+  width: 47%;
+  border: 1px solid #47c1c4;
+  border-radius: 10rpx;
+  margin: 10rpx 0;
+  color: #47c1c4;
+}
+
+.pre-cond {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  flex: 0 30%;
+  display: inline-block;
+}
+
+.rmb {
+  font-size: 26rpx;
+}
+
+.count {
+  font-size: 40rpx;
+}
+
+.condition {
+  flex: 0 60%;
+  font-size: 30rpx;
+  margin-top: 5rpx;
+}
+
+.condition image {
+  border: 1px solid #47c1c4;
+  border-top-left-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+  width: 60rpx;
+  height: 20rpx;
+}
+
+.desc {
+  font-size: 24rpx;
+  color: #fff;
+  background-color: #47c1c4;
+  text-align: center;
+  line-height: 60rpx;
+  margin-top: 15rpx;
+}

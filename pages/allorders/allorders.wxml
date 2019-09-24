@@ -1,0 +1,89 @@
+<!--pages/allorders/allorders.wxml-->
+<view class="allorders-layout">
+  <view class="menu">
+    <view class="{{currentTab==0?'select':'default'}}" data-current="0" bindtap="switchTab">
+      全部订单
+    </view>
+    <view class="{{currentTab==1?'select':'default'}}" data-current="1" bindtap="switchTab">
+      待付款
+    </view>
+    <view class="{{currentTab==2?'select':'default'}}" data-current="2" bindtap="switchTab">
+      待收货
+    </view>
+  </view>
+
+  <view wx:if="{{currentTab == 0}}">
+    <view wx:for="{{allorder}}" wx:key="{{item.id}}">
+      <view class="payContent">
+        <view class="state">
+          <view>
+            状态：
+            <text>已签收</text>
+          </view>
+          <view>总价：
+            <text>￥{{item.price}}</text>
+          </view>
+        </view>
+        <view class="dashed"></view>
+        <view class="order">
+          <view class="img">
+            <image src="{{item.url}}"></image>
+          </view>
+          <view class="content">
+            <view class="title">{{item.title}}</view>
+            <view class="count">{{item.count}}件</view>
+          </view>
+        </view>
+      </view>
+      <view class="hr"></view>
+    </view>
+  </view>
+
+  <view wx:else>
+    <view class="PayableContent">
+      <view class="state1">
+        <view class="left">
+          <view>
+            状态：
+            <text>待付款</text>
+          </view>
+          <view>总价：
+            <text>￥{{totall}}</text>
+          </view>
+        </view>
+        <view class="right">
+          <view wx:if="{{currentTab==1}}">
+            <view class="btn">去支付</view>
+          </view>
+          <view wx:if="{{currentTab==2}}">
+            <view class="btn">确认</view>
+          </view>
+        </view>
+      </view>
+      <view class="dashed"></view>
+    </view>
+    <view wx:if="{{currentTab==2}}">
+      <view class="adders">
+        <view class="adder-txt">
+          <view class="txt">广东省广州市体育西路</view>
+          <view class="date">2019-6-24</view>
+        </view>
+        <view class="text">></view>
+      </view>
+      <view class="hr"></view>
+    </view>
+    <view wx:for="{{allorder}}" wx:key="{{item.id}}">
+      <view class="order">
+        <view class="img">
+          <image src="{{item.url}}"></image>
+        </view>
+        <view class="content">
+          <view class="title">{{item.title}}</view>
+          <view class="count">{{item.count}}件</view>
+        </view>
+      </view>
+      <view class="line"></view>
+    </view>
+  </view>
+
+</view>

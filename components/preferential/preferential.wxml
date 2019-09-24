@@ -1,0 +1,58 @@
+<!--components/preferential/preferential.wxml-->
+<view class="preferential-layout">
+  <view class="title">发现京东优惠卷</view>
+  <view class="items">
+    <view class="item">
+      <view class="pre-cond">
+        <view class="price">
+          <text class="rmb">￥</text>
+          <text class="count">5</text>
+        </view>
+        <view class="condition">
+          <image src="http://img01.chrstatic.com/images/photo/201512/1450147422160240566f7e5e4f40e.jpg"></image>
+          <view class="condition-price">满100可用</view>
+        </view>
+      </view>
+      <view class="desc">全品类(特俗商品外)</view>
+    </view>
+    <view class="item">
+      <view class="pre-cond">
+        <view class="price">
+          <text class="rmb">￥</text>
+          <text class="count">5</text>
+        </view>
+        <view class="condition">
+          <image src="http://img01.chrstatic.com/images/photo/201512/1450147422160240566f7e5e4f40e.jpg"></image>
+          <view class="condition-price">满100可用</view>
+        </view>
+      </view>
+      <view class="desc">全品类(特俗商品外)</view>
+    </view>
+    <view class="item">
+      <view class="pre-cond">
+        <view class="price">
+          <text class="rmb">￥</text>
+          <text class="count">5</text>
+        </view>
+        <view class="condition">
+          <image src="http://img01.chrstatic.com/images/photo/201512/1450147422160240566f7e5e4f40e.jpg"></image>
+          <view class="condition-price">满100可用</view>
+        </view>
+      </view>
+      <view class="desc">全品类(特俗商品外)</view>
+    </view>
+    <view class="item">
+      <view class="pre-cond">
+        <view class="price">
+          <text class="rmb">￥</text>
+          <text class="count">5</text>
+        </view>
+        <view class="condition">
+          <image src="http://img01.chrstatic.com/images/photo/201512/1450147422160240566f7e5e4f40e.jpg"></image>
+          <view class="condition-price">满100可用</view>
+        </view>
+      </view>
+      <view class="desc">全品类(特俗商品外)</view>
+    </view>
+  </view>
+</view>

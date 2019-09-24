@@ -1,0 +1,60 @@
+<!--pages/shoppingcart/shoppingcart.wxml-->
+<view class="line"></view>
+<view class="shop-layout">
+  <view class="info">
+    <view class="line"></view>
+    <view class="receive">
+      京东购物
+    </view>
+    <view class="line"></view>
+
+    <view class="items">
+      <checkbox-group bindchange="checkboxChange">
+        <view wx:for="{{goods}}" wx:key="item.id">
+          <view class="item">
+            <view class="icom">
+              <checkbox checked="{{selected}}" value="{{item.id}}"></checkbox>
+            </view>
+            <view class="pic">
+              <image src="{{item.pic}}" style="width:160rpx;height:160rpx"></image>
+            </view>
+            <view class="order">
+              <view class="title">{{item.name}}</view>
+              <view class="desc">
+                <view>重量:{{item.weight}}</view>
+                <view>规格:{{item.spec}}</view>
+              </view>
+              <view class="priceInfo">
+                <view class="price">￥{{item.price}}</view>
+                <view class="minus" id="{{item.id}}" bindtap="minusGoods">-</view>
+                <view class="count">{{item.count}}</view>
+                <view class="add" id="{{item.id}}" bindtap="addGoods">+</view>
+              </view>
+            </view>
+          </view>
+          <view class="line"></view>
+        </view>
+      </checkbox-group>
+      <!-- 购物车结账 -->
+      <checkbox-group bindchange="checkAll">
+        <view class="totallInfo">
+          <view class="all">
+            <view>
+              <checkbox checked="{{selectedAll}}"></checkbox>
+            </view>
+            <view>全选</view>
+          </view>
+          <view class="amount">
+            <view class="totall">
+              总计:￥{{totalPrice}}元
+            </view>
+            <view>
+              不含运费，已优惠 ￥0.00
+            </view>
+          </view>
+          <view class="opr">去结算</view>
+        </view>
+      </checkbox-group>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,72 @@
+<view class="order-layout">
+  <view class="bg">
+    <view class="head">
+      <view class="headeIcon">
+        <image src="https://ps.ssl.qhimg.com/t0117752032615fcc96.jpg" style=" width:198rpx;height:198rpx "></image>
+      </view>
+      <view class="login">
+        <view>jd_4888438jb18cm</view>
+        <view class="account">账号：7758723_u</view>
+      </view>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <navigator url="/pages/allorders/allorders">
+    <view class="item">
+      <view class="img">
+        <image src="../../image/myOrder.png" style="width: 50rpx;height: 48rpx;"></image>
+      </view>
+      <view class="name">全部订单</view>
+      <view class="detail">
+        <text> ></text>
+      </view>
+    </view>
+    <view class="line"></view>
+  </navigator>
+
+  <view class="item">
+    <view class="img">
+      <image src="../../image/mall.png" style="width: 40rpx;height: 48rpx;"></image>
+    </view>
+    <view class="name">头条商城</view>
+    <view class="detail">
+      <text> ></text>
+    </view>
+  </view>
+  <view class="line"></view>
+
+  <view class="item">
+    <view class="img">
+      <image src="../../image/sign.png" style="width: 50rpx;height: 48rpx;"></image>
+    </view>
+    <view class="name">待收货</view>
+    <view class="detail">
+      <text class="count">2单</text>
+      <text> ></text>
+    </view>
+  </view>
+  <view class="line"></view>
+
+  <view class="item">
+    <view class="img">
+      <image src="../../image/afterSale.png" style="width: 54rpx;height: 44rpx;"></image>
+    </view>
+    <view class="name">售后订单</view>
+    <view class="detail">
+      <text> ></text>
+    </view>
+  </view>
+  <view class="hr"></view>
+
+  <view class="item" bindtap="seeCoupon">
+    <view class="img">
+      <image src="../../image/preferential.png" style="width: 44rpx;height: 48rpx;"></image>
+    </view>
+    <view class="name">优惠卷</view>
+    <view class="detail">
+      <text class="count">4张</text>
+      <text> ></text>
+    </view>
+  </view>
+  <view class="line"></view>
+</view>

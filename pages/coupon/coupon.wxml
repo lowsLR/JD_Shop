@@ -1,0 +1,59 @@
+<!--pages/coupon/coupon.wxml-->
+<view class="coupon-layout">
+  <view class="menu">
+    <view class="{{currentTab==0?'select':'defauil'}}" data-id="0" bindtap="switchNav">
+      待使用4
+    </view>
+    <view class="{{currentTab==1?'select':'defauil'}}" data-id="1" bindtap="switchNav">
+      已过期3
+    </view>
+    <view class="{{currentTab==2?'select':'defauil'}}" data-id="2" bindtap="switchNav">
+      已使用1
+    </view>
+  </view>
+  <view wx:for="{{coupons}}" wx:key="{{item.id}}">
+    <view wx:if="{{currentTab==0}}">
+      <view class="item">
+        <view class="priceInfo">
+          <view class="price">
+            <text class="rmb">￥</text>
+            <text class="count">{{item.price}}</text>
+          </view>
+          <view class="type">
+            <view>
+              <image src="http://img01.chrstatic.com/images/photo/201512/1450147422160240566f7e5e4f40e.jpg" class="imgColor"></image>
+              {{item.condition}}
+            </view>
+            <view>{{item.goods}}</view>
+          </view>
+        </view>
+        <view class="desc">
+          <view class="left">{{item.way}}</view>
+          <view class="right">{{item.date}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view wx:else>
+      <view class="item1">
+        <view class="priceInfo">
+          <view class="price1">
+            <text class="rmb">￥</text>
+            <text class="count">{{item.price}}</text>
+          </view>
+          <view class="type1">
+            <view>
+              <image src="http://img01.chrstatic.com/images/photo/201512/1450147422160240566f7e5e4f40e.jpg" class="imgColor1"></image>
+              {{item.condition}}
+            </view>
+            <view>{{item.goods}}</view>
+          </view>
+        </view>
+        <view class="desc1">
+          <view class="left">{{item.way}}</view>
+          <view class="right">{{item.date}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
